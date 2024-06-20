@@ -23,7 +23,7 @@ public class UpAndDown_stepDefs {
     HomePage homePage = new HomePage();
 
 
-    @Given("Navigate to the MentorWise website home page.")
+    @Given("Navigate to the MentorWise website home page")
     public void navigateToTheMentorWiseWebsiteHomePage() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
@@ -50,7 +50,6 @@ public class UpAndDown_stepDefs {
 
     @When("Click on the {string}")
     public void clickOnLink(String link) {
-        WebElement element = null;
 
         switch (link) {
             case "homeLink":
