@@ -58,7 +58,6 @@ public class UpAndDown_stepDefs {
     public void clickOnLink(String link) {
 
 
-
         switch (link) {
             case "homeLink":
               homePage.homeLink.click();
@@ -79,8 +78,39 @@ public class UpAndDown_stepDefs {
                     break;
                 }
             case "joinUs":
-                homePage.joinUs.click();
-                break;
+
+                try{
+                // Open the website
+                Driver.getDriver().get("https://mentorwise.org.uk");
+
+                // Wait for the hamburger menu to be visible and click it
+                WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+                Actions actions = new Actions(Driver.getDriver());
+                actions.moveToElement(homePage.joinUs).click().perform();
+
+                actions.moveToElement(homePage.becomeVolunteer).click().perform();
+
+        } finally {
+            break;
+        }
+
+            case "branches":
+                try{
+                    // Open the website
+                    Driver.getDriver().get("https://mentorwise.org.uk");
+
+                    // Wait for the hamburger menu to be visible and click it
+                    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+                    Actions actions = new Actions(Driver.getDriver());
+                    actions.moveToElement(homePage.branches).click().perform();
+
+                    actions.moveToElement(homePage.southWestLondon).click().perform();
+
+                } finally {
+                    break;
+                }
+
+
             case "contactUs":
                homePage.contactUs.click();
                 break;

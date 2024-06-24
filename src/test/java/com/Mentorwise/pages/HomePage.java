@@ -33,12 +33,17 @@ public class HomePage {
     @FindBy(xpath = "//span[@class='item_text' and text()='Join Us']")
     public WebElement joinUs;
 
-    //@FindBy(xpath = "//span[@class='item_text' and text()='Branches']")
-    //public WebElement branches;
+    @FindBy(xpath = "//span[@class='item_text' and text()='Branches']")
+    public WebElement branches;
+
+    @FindBy(xpath = "//span[@class='item_text' and text()='South West London']")
+    public WebElement southWestLondon;
 
     @FindBy(xpath = "//span[@class='item_text' and text()='Contact Us']")
     public WebElement contactUs;
 
+    @FindBy(xpath = "//a[contains(@href, 'become-a-volunteer')]")
+    public WebElement becomeVolunteer;
 
 
 
