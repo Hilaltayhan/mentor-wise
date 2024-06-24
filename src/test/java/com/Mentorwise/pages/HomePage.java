@@ -27,14 +27,14 @@ public class HomePage {
     @FindBy(xpath = "//a[@href='https://mentorwise.org.uk/']//span[@class='item_text' and text()='Home']")
     public WebElement homeLink;
 
-    @FindBy(xpath = "//span[@class='item_text' and text()='About Mentor Wise']")
+    @FindBy(xpath = "//span[@class='item_text' and text()[1]='About Mentor Wise']")
     public WebElement aboutMentorWise;
 
     @FindBy(xpath = "//span[@class='item_text' and text()='Join Us']")
     public WebElement joinUs;
 
-    @FindBy(xpath = "//span[@class='item_text' and text()='Branches']")
-    public WebElement branches;
+    //@FindBy(xpath = "//span[@class='item_text' and text()='Branches']")
+    //public WebElement branches;
 
     @FindBy(xpath = "//span[@class='item_text' and text()='Contact Us']")
     public WebElement contactUs;

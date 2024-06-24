@@ -13,9 +13,9 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json"
         },
         features = "src/test/resources/features",
-        glue = "com/NextBaseCrm/step_definitions",
+        glue = "com/Mentorwise/step_defs",
         dryRun = false,
-        tags = "@UpAndDown",
+        tags = "",
         publish = true //generating a report with public link
 )
 
